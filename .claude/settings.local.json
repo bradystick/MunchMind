@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"/Users/bradystick/Shopify Buisness Master Folder/munchmind/src/app/globals.css\" /Users/bradystick/MunchMind/src/app/globals.css)",
+      "Bash(cp \"/Users/bradystick/Shopify Buisness Master Folder/munchmind/src/app/layout.tsx\" /Users/bradystick/MunchMind/src/app/layout.tsx)",
+      "Bash(cp \"/Users/bradystick/Shopify Buisness Master Folder/munchmind/src/app/page.tsx\" /Users/bradystick/MunchMind/src/app/page.tsx)",
+      "Bash(cp \"/Users/bradystick/Shopify Buisness Master Folder/munchmind/src/app/favicon.ico\" /Users/bradystick/MunchMind/src/app/favicon.ico)",
+      "Bash(cp \"/Users/bradystick/Shopify Buisness Master Folder/munchmind/src/app/quiz/page.tsx\" /Users/bradystick/MunchMind/src/app/quiz/page.tsx)",
+      "Bash(cp \"/Users/bradystick/Shopify Buisness Master Folder/munchmind/src/app/pricing/page.tsx\" /Users/bradystick/MunchMind/src/app/pricing/page.tsx)",
+      "Bash(cp \"/Users/bradystick/Shopify Buisness Master Folder/munchmind/src/app/about/page.tsx\" /Users/bradystick/MunchMind/src/app/about/page.tsx)",
+      "Bash(cp \"/Users/bradystick/Shopify Buisness Master Folder/munchmind/src/app/how-it-works/page.tsx\" /Users/bradystick/MunchMind/src/app/how-it-works/page.tsx)",
+      "Bash(cp \"/Users/bradystick/Shopify Buisness Master Folder/munchmind/src/app/snackery/page.tsx\" /Users/bradystick/MunchMind/src/app/snackery/page.tsx)",
+      "Bash(cp \"/Users/bradystick/Shopify Buisness Master Folder/munchmind/src/app/corporate/page.tsx\" /Users/bradystick/MunchMind/src/app/corporate/page.tsx)",
+      "Bash(cp \"/Users/bradystick/Shopify Buisness Master Folder/munchmind/src/app/success/page.tsx\" /Users/bradystick/MunchMind/src/app/success/page.tsx)",
+      "Bash(cp \"/Users/bradystick/Shopify Buisness Master Folder/munchmind/src/app/cancel/page.tsx\" /Users/bradystick/MunchMind/src/app/cancel/page.tsx)",
+      "Bash(cp \"/Users/bradystick/Shopify Buisness Master Folder/munchmind/src/app/api/checkout/route.ts\" /Users/bradystick/MunchMind/src/app/api/checkout/route.ts)",
+      "Bash(cp \"/Users/bradystick/Shopify Buisness Master Folder/munchmind/src/components/\"*.tsx /Users/bradystick/MunchMind/src/components/)",
+      "Bash(cp \"/Users/bradystick/Shopify Buisness Master Folder/munchmind/public/\"* /Users/bradystick/MunchMind/public/)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(xargs kill:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(ls -lt /Users/bradystick/Downloads/*.png /Users/bradystick/Downloads/*.jpg /Users/bradystick/Downloads/*.webp)",
+      "Bash(python3 -c \"from PIL import Image; print\\(''''Pillow available''''\\)\")",
+      "Bash(pip3 install:*)",
+      "Bash(python3 -c \"from PIL import Image; print\\(''ok''\\)\")",
+      "Bash(python3:*)",
+      "Bash(ls -lt /Users/bradystick/Downloads/*.jpg /Users/bradystick/Downloads/*.png /Users/bradystick/Downloads/*.webp)",
+      "Bash(ls -lt /Users/bradystick/Downloads/*.png)",
+      "Bash(lsof -ti:3000)",
+      "Bash(git init:*)",
+      "Bash(git branch:*)",
+      "Bash(gh auth:*)",
+      "Bash(brew install:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
