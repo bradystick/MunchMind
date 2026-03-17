@@ -2,7 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import { rateLimit } from "@/lib/rate-limit";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
+function getStripe() {
+  const key = process.env.STRIPE_SECRET_KEY;
+  if (!key || key === "sk_test_REPLACE_ME") {
+    return null;
+  }
+  return new Stripe(key);
+}
 
 const VALID_PLANS = ["standard", "premium"] as const;
 type Plan = (typeof VALID_PLANS)[number];
@@ -75,6 +81,14 @@ export async function POST(req: NextRequest) {
     if (!priceId || priceId === "price_REPLACE_ME") {
       return NextResponse.json(
         { error: "Stripe is not configured yet. Please add your Stripe Price IDs to .env.local" },
+        { status: 400 }
+      );
+    }
+
+    const stripe = getStripe();
+    if (!stripe) {
+      return NextResponse.json(
+        { error: "Stripe is not configured yet." },
         { status: 400 }
       );
     }
